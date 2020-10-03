@@ -1,0 +1,32 @@
+{
+  "name": "node-kafka",
+  "version": "1.0.0",
+  "description": "NodeJS Kafka example",
+  "main": "index.js",
+  "scripts": {
+    "log": "node services/logs.js",
+    "fraud": "node services/fraudDetector.js",
+    "email": "node services/email.js",
+    "order": "node services/newOrder.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rchuluc/node-kafka.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rchuluc/node-kafka/issues"
+  },
+  "homepage": "https://github.com/rchuluc/node-kafka#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "dotenv": "^8.2.0",
+    "faker": "^5.1.0",
+    "ip": "^1.1.5",
+    "kafkajs": "^1.14.0",
+    "uuid": "^8.3.0",
+    "winston": "^3.3.3"
+  }
+}
