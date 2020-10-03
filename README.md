@@ -30,7 +30,7 @@ export HOST_IP=$(ifconfig | grep -E "([0-9]{1,3}\.){3}[0-9]{1,3}" | grep -v 127.
 docker-compose up
 ```
 
-Then, execute one services in each terminal
+Then, execute one service in each terminal
 
 ```sh
 npm run log
