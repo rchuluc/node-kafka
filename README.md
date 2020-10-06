@@ -5,7 +5,7 @@ NodeJS ecommerce proof of concept example using Apache Kafka.
 ## Application flow
 
 1. A new order is created.
-2. The fraud detector make a verification to prevent payment frauds, it take some time to complete.
+2. The fraud detector do a verification to prevent payment frauds, it take some time to complete.
 3. An email is sent to buyer informing if the order was accepted or rejected by fraud detector.
 4. All messages are recived by log service.
 
@@ -13,7 +13,7 @@ NOTE: none of services above do a real job, is just a couple `console.log's`.
 
 ## Kafka
 
-In this POC, are two topics ECOMMERCE_NEW_ORDER and ECOMMERCE_SEND_EMAIL. To add more topics add a new value to `KAFKA_CREATE_TOPICS` in `docker-compose.yml` separed by comma, the topic follow the `NAME:PARTITIONS:REPLICAS:CLEANUP_POLICY` pattern.
+In this project, are two topics ECOMMERCE_NEW_ORDER and ECOMMERCE_SEND_EMAIL. To add more topics add a new value to `KAFKA_CREATE_TOPICS` in `docker-compose.yml` separed by comma, the topic follow the `NAME:PARTITIONS:REPLICAS:CLEANUP_POLICY` pattern.
 
 The messages are serialized in JSON format.
 
